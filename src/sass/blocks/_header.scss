@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__inner-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__questions {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  &__phone {
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: $main-color;
+    }
+  }
+} 
+.nav {
+  display: flex;
+
+  &__menu {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+  &__item {
+    border-right: 1px dotted rgba(255,255,255, 0.7);
+    padding-right: 10px;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    &:hover {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+}
