@@ -1,0 +1,26 @@
+.benefits {
+  padding-top: 55px;
+  padding-bottom: 42px;
+  background-color: #f3f3f3;
+  &__descr {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3a3a3a;
+  }
+  &__wrapper-items {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 490px);
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: space-around;
+    column-gap: 88px;
+    row-gap: 35px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 65px 418px;
+    column-gap: 13px;
+  }
+}

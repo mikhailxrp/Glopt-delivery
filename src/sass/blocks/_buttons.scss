@@ -1,9 +1,5 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items:center; 
-  width: 160px;
-  height: 45px;
+  padding: 18px 23px;
   background-color: $main-color;
   border: none;
   border-radius: 30px;
@@ -11,4 +7,13 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
+  &__big {
+    margin-top: 39px;
+    padding: 23px 45px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
