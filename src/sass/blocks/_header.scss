@@ -25,18 +25,18 @@
 } 
 .nav {
   display: flex;
-
-  &__menu {
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    margin-bottom: 0;
-  }
+} 
+.menu {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 0;
   &__item {
-    border-right: 1px dotted rgba(255,255,255, 0.7);
+    border-right: 1px dotted rgba(255, 255, 255, 0.7);
     padding-right: 10px;
+
     &:last-child {
       border: none;
     }

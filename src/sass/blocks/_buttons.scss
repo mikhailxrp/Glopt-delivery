@@ -8,12 +8,17 @@
   text-transform: uppercase;
   color: #ffffff;
   &__big {
-    margin-top: 39px;
+    margin-top: 40px;
     padding: 23px 45px;
     font-size: 15px;
     line-height: 17px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+  }
+  &__item {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 13px 35px;
   }
 }
