@@ -2,6 +2,7 @@
 @import "libs/fonts";
 @import "base/variables";
 @import "base/mixins";
+@import "base/slick.scss";
 
 
 * {
@@ -36,4 +37,9 @@
 @import "blocks/agent";
 @import "blocks/prices";
 @import "blocks/form";
+@import "blocks/menedgers";
+@import "blocks/how-work";
+@import "blocks/reviews";
+@import "blocks/questions";
+@import "blocks/footer";
 @import "base/media";

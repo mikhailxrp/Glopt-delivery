@@ -1,5 +1,7 @@
 .prices {
   padding-top: 55px;
+  min-height: 955px;
+  padding-bottom: 58px;
   &__descr {
     width: 689px;
     font-size: 21px;
@@ -16,6 +18,7 @@
     align-items:center;
     flex-wrap: wrap;
     padding-bottom: 55px;
+    row-gap: 20px;
   }
   &__wrapper-head {
     width: 269px;
@@ -75,5 +78,24 @@
     font-weight: 300;
     color: #2e2e2e;
     text-align: center;
+  }
+  &__form {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 72px;
+  }
+  &__img {
+    position: absolute;
+    width: 130px;
+    height: 102px;
+    background-color: #fff;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

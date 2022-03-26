@@ -22,7 +22,8 @@
     padding: 13px 35px;
   }
   &__price-btn {
-    position: absolute;
+    display: block;
     padding: 14px 35px;
+    margin: 0 auto;
   }
 }

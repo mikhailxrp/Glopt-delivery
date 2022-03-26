@@ -54,6 +54,9 @@
   
   .title {
     font-size: 62px;
+    &__fs28 {
+      font-size: 28px;
+    }
     &__fs26{
       font-size: 26px;
     }
@@ -72,6 +75,22 @@
     &__img {
       width: 305px;
       height: 175px;
+    }
+  }
+  .how-work {
+    &__wrapper-up {
+      justify-content: center;
+    }
+    &__item-down {
+      margin-right: 0;
+    }
+  }
+  .reviews {
+    .slick-prev {
+      right: 370px;
+    }
+    .slick-next {
+      left: 370px;
     }
   }
 }
@@ -132,6 +151,9 @@
   }
   .title {
     font-size: 48px;
+    &__fs28 {
+      font-size: 28px;
+    }
     &__fs26 {
       font-size: 26px;
     }
@@ -149,6 +171,9 @@
       display: block;
       margin: 0 auto;
       margin-top: 60px;
+    }
+    &__price-btn {
+      display: block;
     }
   }
   .benefits {
@@ -181,6 +206,39 @@
       margin-top: 25px;
       width: 750px;
     }
+  }
+  .form {
+    input {
+      width: 225px;
+    }
+  }
+  .menedgers {
+    &__descr {
+      width: 710px;
+    }
+  }
+  .how-work {
+    &__wrapper-down {
+      justify-content: space-around;
+    }
+    &__wrapper-up {
+      justify-content: space-around;
+    }
+  }
+  .reviews {
+    &__item {
+      width: 500px;
+      height: 285px;
+    }
+    .slick-prev {
+      right: 250px;
+    }
+    .slick-next {
+      left: 250px;
+    }
+  }
+  .questions-form {
+    grid-template-columns: repeat(3, 230px);
   }
 }
 
@@ -249,6 +307,9 @@
 
   .title {
     font-size: 35px;
+    &__fs28 {
+      font-size: 25px;
+    }
     &__fs18 {
       font-size: 18px;
     }
@@ -261,13 +322,15 @@
   }
 
   .btn {
-     display: none;
-
-     &__big {
-       display: block;
-       margin: 0 auto;
-       margin-top: -15px;
-     }
+    display: none;
+    &__big {
+      display: block;
+      margin: 0 auto;
+      margin-top: -15px;
+    }
+    &__price-btn {
+      display: block;
+    }
   }
   .benefits {
     padding-top: 35px;
@@ -305,6 +368,63 @@
       margin-top: 20px;
       width: 530px;
     }
+  }
+  .prices {
+    &__descr {
+      font-size: 20px;
+      width: 535px;
+    }
+    &__img {
+      top: -45px;
+      width: 100px;
+      height: 70px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    input {
+      margin-top: 10px;
+      width: 325px;
+    }
+  }
+  .menedgers {
+    &__descr {
+      width: 530px;
+      margin-top: 12px;
+    }
+  }
+  .how-work {
+    &__wrapper-down {
+      justify-content: space-between;
+    }
+    &__wrapper-up {
+      justify-content: space-between;
+    }
+  }
+  .reviews {
+    &__item {
+      width: 390px;
+      height: 315px;
+    }
+  }
+  .questions-form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 380px;
+    }
+    textarea {
+      width: 380px;
+    }
+
   }
 }
 
@@ -348,6 +468,7 @@
     transform: translate(-50%);
     width: 35px;
     height: 15px;
+    cursor: pointer;
     span {
       display: block;
       height: 2px;
@@ -476,6 +597,7 @@
     margin-bottom: 15px;
   }
   .agent {
+    padding-bottom: 15px;
     &__descr {
       margin-top: 20px;
       width: 290px;
@@ -483,5 +605,62 @@
       padding-bottom: 35px;
     }
   }
-
+  .prices {
+    &__descr {
+      font-size: 16px;
+      width: 290px;
+    }
+    &__wrapper-items {
+      justify-content: center;
+    }
+    &__img {
+      top: -45px;
+      width: 100px;
+      height: 70px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .form {
+    input {
+      margin-top: 10px;
+      width: 270px;
+    }
+  }
+  .menedgers {
+    padding-bottom: 25px;
+    &__descr {
+      width: 290px;
+      line-height: 20px;
+      font-size: 15px;
+    }
+  }
+  .how-work {
+    padding-top: 45px;
+    &__wrapper-down {
+      justify-content: center;
+    }
+    &__wrapper-up {
+      justify-content: center;
+    }
+  }
+  .reviews {
+    &__item {
+      width: 233px;
+      height: 340px;
+    }
+    &__descr {
+      font-size: 12px;
+    }
+  }
+  .questions-form {
+    input {
+      width: 280px;
+    }
+    textarea {
+      width: 280px;
+    }
+  }
 }

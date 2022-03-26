@@ -1,0 +1,27 @@
+.menedgers {
+  min-height: 342px;
+  padding-top: 55px;
+  background: url("../../img/thierd__bg.png") no-repeat 50% / cover;
+  &__icon {
+    width: 102px;
+    height: 102px;
+    margin: 0 auto;
+  }
+  &__subtitle {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  &__descr {
+    width: 925px;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+}

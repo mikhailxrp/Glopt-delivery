@@ -14,4 +14,29 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         })
     })
-})
+});
+$(document).ready(function(){
+    $('.reviews__inner').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow:'<button type="button" class="slick-prev"><img src="../icons/previous_arrow.png"></img></button>',
+        nextArrow:'<button type="button" class="slick-next"><img src="../icons/next_arrow.png"></img></button>',
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+            slidesToShow: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            slidesToShow: 1
+        }
+        }
+    ]
+    });
+});
