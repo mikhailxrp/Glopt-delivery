@@ -13,6 +13,12 @@
     flex-direction: column;
     align-items: flex-end;
   }
+  &__policy-inner {
+    width: 545px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__header {
     font-size: 16px;
     font-weight: 700;
@@ -25,10 +31,34 @@
   }
   hr {
     height: 2px;
+    background-color: #fff;
   }
   &__wrapper-policy {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &__copy {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .6);
+  }
+  &__policy {
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    color: $main-color;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &__phone {
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: $main-color;
+    }
   }
 }

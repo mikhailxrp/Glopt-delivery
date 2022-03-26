@@ -163,6 +163,13 @@
     &__fs16 {
       font-size: 13px;
     }
+    &__fs48 {
+      font-size: 18px;
+    }
+    &__policy {
+      font-size: 16px;
+
+    }
   }
 
   .btn {
@@ -319,6 +326,22 @@
     &__fs16 {
       font-size: 13px;
     }
+    &__fs48 {
+      font-size: 16px;
+    }
+    &__policy {
+      font-size: 14px;
+
+    }
+  }
+  .policy {
+    p {
+      font-size: 12px;
+      color: #2e2e2e;
+    }
+    li {
+      font-size: 12px;
+    }
   }
 
   .btn {
@@ -425,6 +448,17 @@
       width: 380px;
     }
 
+  }
+  .footer {
+    &__header {
+      font-size: 12px;
+    }
+    &__phone {
+      font-size: 12px;
+    }
+    &__policy-inner {
+      width: 400px;
+    }
   }
 }
 
@@ -548,6 +582,12 @@
     &__fs16 {
       font-size: 13px;
     }
+    &__fs48 {
+      font-size: 12px;
+    }
+    &__policy {
+      font-size: 12px;
+    }
   }
   .benefits {
     padding-top: 35px;
@@ -661,6 +701,33 @@
     }
     textarea {
       width: 280px;
+    }
+  }
+  .footer {
+    &__header {
+      display: none;
+    }
+    &__phone {
+      font-size: 18px;
+    }
+    &__policy-inner {
+      width: 245px;
+    }
+    &__policy {
+      text-align: center;
+    }
+    &__copy {
+      text-align: center;
+    }
+  }
+  .policy {
+    padding: 5px 5px;
+    p {
+      font-size: 11px;
+      color: #2e2e2e;
+    }
+    li {
+      font-size: 11px;
     }
   }
 }
