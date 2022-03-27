@@ -182,6 +182,12 @@
     &__price-btn {
       display: block;
     }
+    &__item {
+      display: block;
+    }
+    &__modal-btn {
+      display: block;
+    }
   }
   .benefits {
     padding-top: 45px;
@@ -214,9 +220,20 @@
       width: 750px;
     }
   }
-  .form {
+  .feed-form {
     input {
       width: 225px;
+    }
+    &__modal {
+      border: none;
+      flex-direction: column;
+      input {
+        width: 270px;
+        margin-top: 15px;
+      }
+    }
+    &__questions {
+      grid-template-columns: repeat(3, 230px);
     }
   }
   .menedgers {
@@ -244,9 +261,7 @@
       left: 250px;
     }
   }
-  .questions-form {
-    grid-template-columns: repeat(3, 230px);
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -354,6 +369,12 @@
     &__price-btn {
       display: block;
     }
+    &__item {
+      display: block;
+    }
+    &__modal-btn {
+      display: block;
+    }
   }
   .benefits {
     padding-top: 35px;
@@ -407,7 +428,7 @@
       }
     }
   }
-  .form {
+  .feed-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -416,6 +437,17 @@
     input {
       margin-top: 10px;
       width: 325px;
+    }
+    &__questions {
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 380px;
+      }
+      textarea {
+        width: 380px;
+      }
+
     }
   }
   .menedgers {
@@ -437,17 +469,6 @@
       width: 390px;
       height: 315px;
     }
-  }
-  .questions-form {
-    display: flex;
-    flex-direction: column;
-    input {
-      width: 380px;
-    }
-    textarea {
-      width: 380px;
-    }
-
   }
   .footer {
     &__header {
@@ -663,10 +684,35 @@
       }
     }
   }
-  .form {
+  .feed-form {
     input {
       margin-top: 10px;
       width: 270px;
+    }
+    &__modal {
+      border: none;
+      flex-direction: column;
+      input {
+        width: 245px;
+        margin-top: 15px;
+      }
+    }
+    &__questions {
+      input {
+        width: 280px;
+      }
+
+      textarea {
+        width: 280px;
+      }
+    }
+  }
+  .btn {
+    &__modal-btn {
+      display: block;
+      margin-top: 25px;
+      font-size: 16px;
+      padding: 10px 35px;
     }
   }
   .menedgers {
@@ -695,14 +741,6 @@
       font-size: 12px;
     }
   }
-  .questions-form {
-    input {
-      width: 280px;
-    }
-    textarea {
-      width: 280px;
-    }
-  }
   .footer {
     &__header {
       display: none;
@@ -728,6 +766,20 @@
     }
     li {
       font-size: 11px;
+    }
+  }
+  .modal {
+    &__mini {
+      padding: 65px 10px;
+      width: 260px;
+      min-height: 300px;
+    }
+    &__wrapper {
+      padding-top: 15px;
+      width: 260px;
+    }
+    &__subheader {
+      font-size: 14px;
     }
   }
 }

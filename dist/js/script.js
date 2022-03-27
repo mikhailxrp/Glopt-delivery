@@ -39,4 +39,50 @@ $(document).ready(function(){
         }
     ]
     });
+
 });
+
+// modal windows
+
+$('[data-modal=call-back]').on('click', function () {
+    $('.overlay, #call-back').fadeIn('slow');
+});
+$('.modal__close').on('click', function () {
+    $('.overlay, #call-back').fadeOut('slow');
+});
+
+// validation form
+
+function valideForms(form) {
+    $(form).validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Введите имя",
+                minlength: jQuery.validator.format("Минимум {0} символа!")
+            },
+            phone: "Введите телефон",
+            email: {
+                required: "Введите email",
+                email: "email в формате test@test.ru"
+            }
+        }
+    });
+};
+valideForms('#price');
+valideForms('#call-back form');
+valideForms('#question');
+
+// number phone mask
+
+$('input[name=phone]').mask("+7(999) 999-99-99");

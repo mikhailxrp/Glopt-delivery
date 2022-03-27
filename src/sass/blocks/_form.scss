@@ -1,4 +1,4 @@
-.form {
+.feed-form {
   position: relative;
   min-height: 166px;
   border: 1px solid #898989;
@@ -20,30 +20,47 @@
     height: 50px;
     background-color:#fff;
   }
-}
-.questions-form {
-  display: grid;
-  grid-template-columns: repeat(3, 270px);
-  grid-template-rows: repeat(3, minmax(55px, auto));
-  grid-auto-rows: minmax(55px, auto);
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-  row-gap: 10px;
-  input {
-    height: 47px;
-    border-radius: 25px;
-    border: 1px solid #898989;
-    padding-left: 28px;
+  &__modal {
+    border: none;
+    flex-direction: column;
+    input {
+      margin-top: 15px;
+    }
   }
-  textarea {
-    grid-column: 1 / 4;
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-left: 20px;
-    resize: none;
+  &__questions {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(3, minmax(55px, auto));
+    grid-auto-rows: minmax(55px, auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    border: none;
+    input {
+      height: 47px;
+      border-radius: 25px;
+      border: 1px solid #898989;
+      padding-left: 28px;
+    }
+    textarea {
+      grid-column: 1 / 4;
+      border-radius: 25px;
+      padding-top: 10px;
+      padding-left: 20px;
+      resize: none;
+    }
+    #quest {
+      grid-column: 2 / 3;
+    }
   }
-  #quest {
-    grid-column: 2 / 3;
+  .error {
+    font-size: 12px;
+    color: red;
+    border: 1px solid red;
   }
+  label.error {
+    border: none;
+  }
+
 }
