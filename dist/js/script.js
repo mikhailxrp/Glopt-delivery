@@ -20,8 +20,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow:'<button type="button" class="slick-prev"><img src="../icons/previous_arrow.png"></img></button>',
-        nextArrow:'<button type="button" class="slick-next"><img src="../icons/next_arrow.png"></img></button>',
+        prevArrow:'<button type="button" class="slick-prev"><img src="icons/previous_arrow.png"></img></button>',
+        nextArrow:'<button type="button" class="slick-next"><img src="icons/next_arrow.png"></img></button>',
     responsive: [
         {
         breakpoint: 768,
@@ -86,3 +86,27 @@ valideForms('#question');
 // number phone mask
 
 $('input[name=phone]').mask("+7(999) 999-99-99");
+
+// send mail 
+
+$('form').submit(function(e) {
+    e.preventDefault();
+
+    if(!$(this).valid()) {
+        return;
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+
+        $('#call-back').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+    });
+    return false;
+});
